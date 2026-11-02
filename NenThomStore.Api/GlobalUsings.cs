@@ -1,0 +1,9 @@
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using NenThomStore.Api.Data;
+global using NenThomStore.Api.DTOs;
+global using NenThomStore.Api.Models;
+global using NenThomStore.Api.Services;
+global using System.ComponentModel.DataAnnotations;
+global using System.Security.Claims;
