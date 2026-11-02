@@ -1,7 +1,6 @@
 // Cấu hình Frontend. Sửa file này để đổi địa chỉ Backend và thông tin thương hiệu.
 window.APP_CONFIG = {
-  apiBase: '',                               // GitHub Pages không có Backend -> dùng dữ liệu tĩnh bên dưới (js/static-api.js)
-  staticData: 'data/store.json',             // dữ liệu cửa hàng xuất từ localhost (scripts/export-for-github.ps1)
+  apiBase: '',          // địa chỉ Backend (NenThomStore.Api)
   brand: {
     name: 'The Aura Candle',
     tagline: 'Hương thơm bừng lên phong cách sống',
