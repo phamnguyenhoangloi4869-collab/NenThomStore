@@ -1,0 +1,47 @@
+﻿{
+    "value":  [
+                  {
+                      "id":  6,
+                      "name":  "Nến decor",
+                      "description":  null,
+                      "isActive":  true,
+                      "productCount":  2
+                  },
+                  {
+                      "id":  3,
+                      "name":  "Nến hộp thiếc",
+                      "description":  "Nến hộp thiếc nhỏ gọn, tiện mang theo khi đi du lịch hoặc làm quà nhỏ.",
+                      "isActive":  true,
+                      "productCount":  3
+                  },
+                  {
+                      "id":  2,
+                      "name":  "Nến hũ thủy tinh",
+                      "description":  "Nến hũ thủy tinh nắp đậy dung tích lớn, thời gian cháy dài, hợp phòng khách.",
+                      "isActive":  true,
+                      "productCount":  5
+                  },
+                  {
+                      "id":  1,
+                      "name":  "Nến ly",
+                      "description":  "Nến thơm đổ ly dung tích 100g–200g, dễ dùng, phù hợp phòng ngủ, bàn làm việc.",
+                      "isActive":  true,
+                      "productCount":  6
+                  },
+                  {
+                      "id":  5,
+                      "name":  "Phụ kiện nến",
+                      "description":  "Kéo cắt bấc, dụng cụ tắt nến, đế nến và các phụ kiện đi kèm.",
+                      "isActive":  true,
+                      "productCount":  4
+                  },
+                  {
+                      "id":  4,
+                      "name":  "Set quà tặng",
+                      "description":  "Combo nến đóng hộp, hợp tặng sinh nhật, tân gia, quà tri ân.",
+                      "isActive":  true,
+                      "productCount":  5
+                  }
+              ],
+    "Count":  6
+}
