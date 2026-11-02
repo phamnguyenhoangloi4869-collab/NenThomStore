@@ -1,6 +1,6 @@
 // Cấu hình Frontend. Sửa file này để đổi địa chỉ Backend và thông tin thương hiệu.
 window.APP_CONFIG = {
-  apiBase: 'http://localhost:5080',          // địa chỉ Backend (NenThomStore.Api)
+  apiBase: '',          // địa chỉ Backend (NenThomStore.Api)
   brand: {
     name: 'The Aura Candle',
     tagline: 'Hương thơm bừng lên phong cách sống',
