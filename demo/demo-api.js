@@ -8,7 +8,7 @@
     mk(4, 'Nến ly Chanh Sả', 1, 159000, 139000, 'Chanh & sả', '180g', 40, 3, false, 50), mk(5, 'Nến thiếc Trà Trắng', 2, 99000, null, 'Trà trắng', '80g', 20, 40, false, 60), mk(6, 'Nến thiếc Gỗ Ấm', 2, 109000, 89000, 'Gỗ đàn hương', '80g', 20, 35, true, 3),
     mk(7, 'Set quà Mùa Hè', 3, 399000, 349000, 'Tuyển chọn 3 mùi', '3 x 80g', 60, 15, true, 2), mk(8, 'Bộ cắt bấc nến', 4, 79000, null, '', '1 bộ', null, 50, false, 90)];
   const users = [{ id: 'u1', email: 'admin@demo.vn', fullName: 'Quản trị viên Demo', roles: ['Admin'] }, { id: 'u2', email: 'manager@demo.vn', fullName: 'Quản lý Demo', roles: ['Manager'] }, { id: 'u3', email: 'customer@demo.vn', fullName: 'Khách hàng Demo', roles: ['Customer'] }].map(u => ({ ...u, pw: 'demo', locked: false, phone: null, address: null, createdAt: new Date().toISOString() }));
-  let visits = 1968;
+  let visits = 2499;
   const carts = {}; let orders = [], reviews = [], seq = { o: 1, p: 100, c: 10, v: 10, r: 1, u: 10 };
   let vouchers = [{ id: 1, code: 'WELCOME10', discountPercent: 10, discountAmount: null, minOrder: 150000, maxUses: null, usedCount: 0, expiresAt: null, isActive: true }];
   const FLOW = { Pending: ['Confirmed', 'Cancelled'], Confirmed: ['Shipping', 'Cancelled'], Shipping: ['Delivered'], Delivered: [], Cancelled: [] };
@@ -34,8 +34,8 @@
     const num = k => (q[k] === undefined || q[k] === '' ? null : Number(q[k]));
     const flag = k => q[k] === 'true';
 
-    if (M === 'POST /api/stats/visit') { visits++; return { visits, purchases: 1236 + orders.filter(o => o.status !== 'Cancelled').length }; }
-    if (M === 'GET /api/stats') return { visits, purchases: 1236 + orders.filter(o => o.status !== 'Cancelled').length };
+    if (M === 'POST /api/stats/visit') { visits++; return { visits, purchases: 1775 + orders.filter(o => o.status !== 'Cancelled').length }; }
+    if (M === 'GET /api/stats') return { visits, purchases: 1775 + orders.filter(o => o.status !== 'Cancelled').length };
     if (M === 'GET /api/categories') return cats.filter(c => (flag('all') && isStaff) || c.isActive).map(c => ({ ...c, productCount: products.filter(x => x.categoryId === c.id && x.isActive).length }));
     if (M === 'GET /api/products') {
       let l = products.filter(x => (flag('includeInactive') && isStaff) || (x.isActive && cats.find(c => c.id === x.categoryId).isActive));

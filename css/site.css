@@ -141,3 +141,4 @@ textarea.form-control{min-height:90px}
 .stat-box{background:#fff;border-radius:16px;padding:.9rem 1rem;box-shadow:0 2px 12px rgba(23,64,92,.07);border-bottom:4px solid var(--sky)}
 .stat-box b{display:block;font-size:1.7rem;line-height:1.2;color:var(--red)}
 .stat-box small{color:var(--navy);font-weight:700}
+.footer-aura .footer-logo{width:200px;height:200px;max-width:100%;object-fit:cover}

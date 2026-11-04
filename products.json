@@ -1,694 +1,680 @@
-﻿{
-    "items":  [
-                  {
-                      "id":  32,
-                      "name":  "Đèn đốt nến thơm",
-                      "description":  null,
-                      "price":  150000.00,
-                      "salePrice":  139999.00,
-                      "effectivePrice":  139999.00,
-                      "scent":  "",
-                      "volume":  "",
-                      "burnTimeHours":  null,
-                      "stock":  45,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  5,
-                      "categoryName":  "Phụ kiện nến",
-                      "imageUrl":  "/uploads/products/3e7dc3978ab24b6e9efeeb85fefc5164.png",
-                      "images":  [
-                                     {
-                                         "id":  8,
-                                         "url":  "/uploads/products/3e7dc3978ab24b6e9efeeb85fefc5164.png",
-                                         "isPrimary":  true
-                                     },
-                                     {
-                                         "id":  9,
-                                         "url":  "/uploads/products/5c14e212900546de82433239ec2eb628.png",
-                                         "isPrimary":  false
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  31,
-                      "name":  "Sao Biển Xanh Ngọc",
-                      "description":  null,
-                      "price":  80000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  80000.00,
-                      "scent":  "",
-                      "volume":  "300g",
-                      "burnTimeHours":  null,
-                      "stock":  25,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  6,
-                      "categoryName":  "Nến decor",
-                      "imageUrl":  "/uploads/products/265b6f3336e04a0594b09ffade724ae1.jpg",
-                      "images":  [
-                                     {
-                                         "id":  7,
-                                         "url":  "/uploads/products/265b6f3336e04a0594b09ffade724ae1.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  30,
-                      "name":  "Hộp Quà Giấc Mơ Tiên Cá",
-                      "description":  "Set quà nến thơm mang cả đại dương mát lành về góc phòng của bạn. Sự kết hợp tinh tế giữa sáp gel xanh ngọc trong vắt, khay gốm sao biển, vỏ ốc cùng tiểu cảnh nàng tiên cá mang hương gió biển và muối mặn thanh khiết, giúp xoa dịu căng thẳng và thắp sáng năng lượng bình yên mùa hạ.  \nSet quà bao gồm: \n01 Nến gel khay gốm sao biển xanh ngọc đính vỏ ốc và hạt cườm lấp lánh   \n01 Nến gel khay gốm vỏ ốc xoắn màu trắng tinh tế   \n01 Nến ly thủy tinh gel xanh biển (tùy chọn mẫu tiểu cảnh nàng tiên cá hoặc rải sỏi đá tự nhiên)   \n01 Phao bơi mini sọc xanh trắng decor xinh xắn   San hô khô và các mảnh vỏ sò tự nhiên trang trí kèm   \n01 Thiệp chúc mừng đi kèm (hỗ trợ viết lời chúc theo yêu cầu)\nHộp quà giấy kraft mộc mạc, chỉn chu kèm lót bảo vệ chống vỡ",
-                      "price":  350000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  350000.00,
-                      "scent":  "",
-                      "volume":  "800g",
-                      "burnTimeHours":  null,
-                      "stock":  5,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  4,
-                      "categoryName":  "Set quà tặng",
-                      "imageUrl":  "/uploads/products/a7f2a14157f648ef9c8ffed3933d7f24.jpg",
-                      "images":  [
-                                     {
-                                         "id":  6,
-                                         "url":  "/uploads/products/a7f2a14157f648ef9c8ffed3933d7f24.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  28,
-                      "name":  "Ốc Biển Xanh Ngọc",
-                      "description":  null,
-                      "price":  80000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  80000.00,
-                      "scent":  "",
-                      "volume":  "150",
-                      "burnTimeHours":  null,
-                      "stock":  35,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  6,
-                      "categoryName":  "Nến decor",
-                      "imageUrl":  "/uploads/products/390d5251a18548d18197a9f06e9e21de.jpg",
-                      "images":  [
-                                     {
-                                         "id":  5,
-                                         "url":  "/uploads/products/390d5251a18548d18197a9f06e9e21de.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  22,
-                      "name":  "Ốc Đảo Biển Sâu",
-                      "description":  null,
-                      "price":  40000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  40000.00,
-                      "scent":  "Coastal Sun \u0026 Coconut Water",
-                      "volume":  "200g",
-                      "burnTimeHours":  null,
-                      "stock":  8,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  2,
-                      "categoryName":  "Nến hũ thủy tinh",
-                      "imageUrl":  "/uploads/products/ce2356be6ce341709bc8618e84da447c.jpg",
-                      "images":  [
-                                     {
-                                         "id":  4,
-                                         "url":  "/uploads/products/ce2356be6ce341709bc8618e84da447c.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  21,
-                      "name":  "Tiểu Tiên Cá Biển Xanh",
-                      "description":  null,
-                      "price":  150000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  150000.00,
-                      "scent":  "Ocean Breeze \u0026 Sea Salt",
-                      "volume":  "300g",
-                      "burnTimeHours":  0,
-                      "stock":  20,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  4,
-                      "categoryName":  "Set quà tặng",
-                      "imageUrl":  "/uploads/products/7cfe62a42a4f42be8b1cbdc7fef73e4f.jpg",
-                      "images":  [
-                                     {
-                                         "id":  3,
-                                         "url":  "/uploads/products/7cfe62a42a4f42be8b1cbdc7fef73e4f.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  20,
-                      "name":  "SET 3 HŨ NẾN THƠM HƯƠNG BIỂN",
-                      "description":  null,
-                      "price":  150000.00,
-                      "salePrice":  120000.00,
-                      "effectivePrice":  120000.00,
-                      "scent":  "Aquatic",
-                      "volume":  "800g",
-                      "burnTimeHours":  null,
-                      "stock":  100,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  2,
-                      "categoryName":  "Nến hũ thủy tinh",
-                      "imageUrl":  "/uploads/products/58736222f1f6428ebae7e9fddd8022e5.jpg",
-                      "images":  [
-                                     {
-                                         "id":  2,
-                                         "url":  "/uploads/products/58736222f1f6428ebae7e9fddd8022e5.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  14,
-                      "name":  "Set quà Mùa Hè (3 nến thiếc)",
-                      "description":  "Hộp quà gồm 3 nến thiếc 50g: Cam bergamot, Chanh sả, Dừa.",
-                      "price":  249000.00,
-                      "salePrice":  219000.00,
-                      "effectivePrice":  219000.00,
-                      "scent":  "Tuyển chọn 3 mùi",
-                      "volume":  "3 x 50g",
-                      "burnTimeHours":  36,
-                      "stock":  34,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  4,
-                      "categoryName":  "Set quà tặng",
-                      "imageUrl":  "/uploads/products/06c8dd6d1e3c438a97c220a4cf319b73.jpg",
-                      "images":  [
-                                     {
-                                         "id":  0,
-                                         "url":  "/uploads/products/06c8dd6d1e3c438a97c220a4cf319b73.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  1,
-                      "name":  "Nến ly Biển Xanh 100g",
-                      "description":  "Nến ly hương biển tươi mát, gợi cảm giác gió muối và nắng sớm.",
-                      "price":  119000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  119000.00,
-                      "scent":  "Muối biển \u0026 rong biển",
-                      "volume":  "100g",
-                      "burnTimeHours":  25,
-                      "stock":  79,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  1,
-                      "categoryName":  "Nến ly",
-                      "imageUrl":  "/uploads/products/4f22abf89e01481bbf1615cf3291a6b6.jpg",
-                      "images":  [
-                                     {
-                                         "id":  1,
-                                         "url":  "/uploads/products/4f22abf89e01481bbf1615cf3291a6b6.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  3,
-                      "name":  "Nến ly Dừa Nắng 100g",
-                      "description":  "Hương dừa non ngọt dịu, hậu vani ấm áp.",
-                      "price":  109000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  109000.00,
-                      "scent":  "Dừa \u0026 vani",
-                      "volume":  "100g",
-                      "burnTimeHours":  25,
-                      "stock":  89,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  1,
-                      "categoryName":  "Nến ly",
-                      "imageUrl":  "/uploads/products/38cb0121ec4a4370ad3fab249d0556e7.jpg",
-                      "images":  [
-                                     {
-                                         "id":  10,
-                                         "url":  "/uploads/products/38cb0121ec4a4370ad3fab249d0556e7.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  11,
-                      "name":  "Nến thiếc Cam Bergamot 50g",
-                      "description":  "Hộp thiếc nhỏ gọn, hương cam bergamot tươi sáng.",
-                      "price":  69000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  69000.00,
-                      "scent":  "Cam bergamot",
-                      "volume":  "50g",
-                      "burnTimeHours":  12,
-                      "stock":  119,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  3,
-                      "categoryName":  "Nến hộp thiếc",
-                      "imageUrl":  "/uploads/products/b5e6bf4423484361b711dea8d0a8777d.jpg",
-                      "images":  [
-                                     {
-                                         "id":  11,
-                                         "url":  "/uploads/products/b5e6bf4423484361b711dea8d0a8777d.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  10,
-                      "name":  "Nến hũ Quế Táo 300g",
-                      "description":  "Hương quế và táo ấm áp, hợp những ngày se lạnh.",
-                      "price":  319000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  319000.00,
-                      "scent":  "Quế \u0026 táo đỏ",
-                      "volume":  "300g",
-                      "burnTimeHours":  65,
-                      "stock":  29,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  2,
-                      "categoryName":  "Nến hũ thủy tinh",
-                      "imageUrl":  "/uploads/products/8b7d3a8362f54a9e9db614752c21a213.jpg",
-                      "images":  [
-                                     {
-                                         "id":  12,
-                                         "url":  "/uploads/products/8b7d3a8362f54a9e9db614752c21a213.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  15,
-                      "name":  "Set quà Thư Giãn (nến ly + kéo cắt bấc)",
-                      "description":  "Gồm 1 nến ly 200g Oải hương và kéo cắt bấc.",
-                      "price":  329000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  329000.00,
-                      "scent":  "Oải hương",
-                      "volume":  "200g + phụ kiện",
-                      "burnTimeHours":  45,
-                      "stock":  24,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  4,
-                      "categoryName":  "Set quà tặng",
-                      "imageUrl":  "/uploads/products/3bd1409b71414e48962346418d07d530.jpg",
-                      "images":  [
-                                     {
-                                         "id":  13,
-                                         "url":  "/uploads/products/3bd1409b71414e48962346418d07d530.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  5,
-                      "name":  "Nến ly Hoa Sứ 100g",
-                      "description":  "Hương hoa sứ, hoa nhài thanh nhẹ và nữ tính.",
-                      "price":  119000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  119000.00,
-                      "scent":  "Hoa sứ \u0026 hoa nhài",
-                      "volume":  "100g",
-                      "burnTimeHours":  25,
-                      "stock":  69,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  1,
-                      "categoryName":  "Nến ly",
-                      "imageUrl":  "/uploads/products/cba27119a65a4fc281f47f6949e28f71.jpg",
-                      "images":  [
-                                     {
-                                         "id":  14,
-                                         "url":  "/uploads/products/cba27119a65a4fc281f47f6949e28f71.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  16,
-                      "name":  "Set quà Cao Cấp (2 nến hũ + dụng cụ tắt nến)",
-                      "description":  "Gồm 2 nến hũ 250g (Gỗ đàn hương, Trà trắng) và dụng cụ tắt nến.",
-                      "price":  599000.00,
-                      "salePrice":  549000.00,
-                      "effectivePrice":  549000.00,
-                      "scent":  "Gỗ đàn hương \u0026 trà trắng",
-                      "volume":  "2 x 250g",
-                      "burnTimeHours":  110,
-                      "stock":  19,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  4,
-                      "categoryName":  "Set quà tặng",
-                      "imageUrl":  "/uploads/products/50f1229455f149bd9138a819976a4d56.jpg",
-                      "images":  [
-                                     {
-                                         "id":  15,
-                                         "url":  "/uploads/products/50f1229455f149bd9138a819976a4d56.jpg",
-                                         "isPrimary":  true
-                                     },
-                                     {
-                                         "id":  16,
-                                         "url":  "/uploads/products/eb3ee5de3d3b42c8954e46e77e16a665.jpg",
-                                         "isPrimary":  false
-                                     },
-                                     {
-                                         "id":  17,
-                                         "url":  "/uploads/products/029f39cbf5774ebb9283dd3edc5b36b6.jpg",
-                                         "isPrimary":  false
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  1
-                  },
-                  {
-                      "id":  8,
-                      "name":  "Nến hũ Gỗ Đàn Hương 250g",
-                      "description":  "Hương gỗ đàn hương ấm, trầm, sang trọng; hũ thủy tinh có nắp đậy.",
-                      "price":  289000.00,
-                      "salePrice":  259000.00,
-                      "effectivePrice":  259000.00,
-                      "scent":  "Gỗ đàn hương \u0026 hổ phách",
-                      "volume":  "250g",
-                      "burnTimeHours":  55,
-                      "stock":  40,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  2,
-                      "categoryName":  "Nến hũ thủy tinh",
-                      "imageUrl":  "/uploads/products/7b796b39a8e44470b9b7faa8da421189.jpg",
-                      "images":  [
-                                     {
-                                         "id":  18,
-                                         "url":  "/uploads/products/7b796b39a8e44470b9b7faa8da421189.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  13,
-                      "name":  "Nến thiếc Vani 80g",
-                      "description":  "Hương vani ngọt nhẹ, hộp thiếc tiện mang đi du lịch.",
-                      "price":  89000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  89000.00,
-                      "scent":  "Vani \u0026 caramel",
-                      "volume":  "80g",
-                      "burnTimeHours":  20,
-                      "stock":  95,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  3,
-                      "categoryName":  "Nến hộp thiếc",
-                      "imageUrl":  "/uploads/products/082e03b3e06846429e81398de0f75d87.jpg",
-                      "images":  [
-                                     {
-                                         "id":  19,
-                                         "url":  "/uploads/products/082e03b3e06846429e81398de0f75d87.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  true,
-                      "sold":  0
-                  },
-                  {
-                      "id":  7,
-                      "name":  "Nến ly Oải Hương 200g",
-                      "description":  "Hương oải hương êm dịu, thích hợp thắp trước giờ ngủ.",
-                      "price":  209000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  209000.00,
-                      "scent":  "Oải hương (lavender)",
-                      "volume":  "200g",
-                      "burnTimeHours":  45,
-                      "stock":  45,
-                      "isActive":  true,
-                      "isFeatured":  true,
-                      "categoryId":  1,
-                      "categoryName":  "Nến ly",
-                      "imageUrl":  "/uploads/products/d740350c00334f4eb0aeca5d7769794d.jpg",
-                      "images":  [
-                                     {
-                                         "id":  20,
-                                         "url":  "/uploads/products/d740350c00334f4eb0aeca5d7769794d.jpg",
-                                         "isPrimary":  true
-                                     }
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  19,
-                      "name":  "Đế đặt nến thủy tinh",
-                      "description":  "Đế thủy tinh chịu nhiệt, bảo vệ mặt bàn khi thắp nến.",
-                      "price":  79000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  79000.00,
-                      "scent":  "",
-                      "volume":  "1 cái",
-                      "burnTimeHours":  null,
-                      "stock":  45,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  5,
-                      "categoryName":  "Phụ kiện nến",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  4,
-                      "name":  "Nến ly Dừa Nắng 200g",
-                      "description":  "Dừa và vani dung tích 200g, phù hợp không gian thư giãn.",
-                      "price":  189000.00,
-                      "salePrice":  169000.00,
-                      "effectivePrice":  169000.00,
-                      "scent":  "Dừa \u0026 vani",
-                      "volume":  "200g",
-                      "burnTimeHours":  45,
-                      "stock":  55,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  1,
-                      "categoryName":  "Nến ly",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  9,
-                      "name":  "Nến hũ Trà Trắng 250g",
-                      "description":  "Hương trà trắng thanh khiết, tinh tế, dễ dùng hằng ngày.",
-                      "price":  279000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  279000.00,
-                      "scent":  "Trà trắng \u0026 xạ hương",
-                      "volume":  "250g",
-                      "burnTimeHours":  55,
-                      "stock":  50,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  2,
-                      "categoryName":  "Nến hũ thủy tinh",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  6,
-                      "name":  "Nến ly Chanh Sả 100g",
-                      "description":  "Hương chanh sả sảng khoái, giúp không gian thông thoáng, dễ chịu.",
-                      "price":  99000.00,
-                      "salePrice":  79000.00,
-                      "effectivePrice":  79000.00,
-                      "scent":  "Chanh \u0026 sả",
-                      "volume":  "100g",
-                      "burnTimeHours":  25,
-                      "stock":  100,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  1,
-                      "categoryName":  "Nến ly",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  12,
-                      "name":  "Nến thiếc Bạc Hà 80g",
-                      "description":  "Hương bạc hà mát lạnh, giúp tỉnh táo khi làm việc.",
-                      "price":  89000.00,
-                      "salePrice":  69000.00,
-                      "effectivePrice":  69000.00,
-                      "scent":  "Bạc hà \u0026 tràm",
-                      "volume":  "80g",
-                      "burnTimeHours":  20,
-                      "stock":  110,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  3,
-                      "categoryName":  "Nến hộp thiếc",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  18,
-                      "name":  "Dụng cụ tắt nến",
-                      "description":  "Dụng cụ tắt nến dạng chuông, tắt lửa nhẹ nhàng, hạn chế khói và sáp bắn.",
-                      "price":  119000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  119000.00,
-                      "scent":  "",
-                      "volume":  "1 cái",
-                      "burnTimeHours":  null,
-                      "stock":  50,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  5,
-                      "categoryName":  "Phụ kiện nến",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  },
-                  {
-                      "id":  17,
-                      "name":  "Kéo cắt bấc nến",
-                      "description":  "Kéo cắt bấc inox, giữ bấc dài khoảng 5mm để nến cháy đều, ít khói.",
-                      "price":  99000.00,
-                      "salePrice":  null,
-                      "effectivePrice":  99000.00,
-                      "scent":  "",
-                      "volume":  "1 cái",
-                      "burnTimeHours":  null,
-                      "stock":  60,
-                      "isActive":  true,
-                      "isFeatured":  false,
-                      "categoryId":  5,
-                      "categoryName":  "Phụ kiện nến",
-                      "imageUrl":  null,
-                      "images":  [
-
-                                 ],
-                      "rating":  0,
-                      "reviewCount":  0,
-                      "isNew":  false,
-                      "sold":  0
-                  }
-              ],
-    "total":  25,
-    "page":  1,
-    "pageSize":  50
+{
+  "items": [
+    {
+      "id": 32,
+      "name": "Đèn đốt nến thơm",
+      "description": "Ưu điểm: Đun chảy nến bằng nhiệt bóng đèn, không dùng lửa, không khói, an toàn tuyệt đối và giúp nến thơm lâu hơn.\nChất liệu: Thân kim loại kết hợp đế gỗ tự nhiên sang trọng, dùng làm đèn ngủ hoặc decor phòng cực xinh.\nCó 2 màu lựa chọn:\nChụp đen – Thân vàng kim (hiện đại, cá tính).\nChụp trắng – Thân vàng kim (tối giản, thanh lịch).",
+      "price": 150000.0,
+      "salePrice": 139999.0,
+      "effectivePrice": 139999.0,
+      "scent": "",
+      "volume": "",
+      "burnTimeHours": null,
+      "stock": 45,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 5,
+      "categoryName": "Phụ kiện nến",
+      "imageUrl": "/uploads/products/3e7dc3978ab24b6e9efeeb85fefc5164.png",
+      "images": [
+        {
+          "id": 8,
+          "url": "/uploads/products/3e7dc3978ab24b6e9efeeb85fefc5164.png",
+          "isPrimary": true
+        },
+        {
+          "id": 9,
+          "url": "/uploads/products/5c14e212900546de82433239ec2eb628.png",
+          "isPrimary": false
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 31,
+      "name": "Sao Biển Xanh Ngọc",
+      "description": "Nến decor hình sao biển độc đáo với tông màu xanh ngọc mát mắt, trang trí thêm vỏ sò sinh động bên trong, mang hơi hướng biển cả tươi mát.\nCông dụng: Thích hợp làm nến thơm trang trí phòng, góc chụp ảnh hoặc làm quà tặng xinh xắn.",
+      "price": 80000.0,
+      "salePrice": null,
+      "effectivePrice": 80000.0,
+      "scent": "",
+      "volume": "300g",
+      "burnTimeHours": null,
+      "stock": 25,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 6,
+      "categoryName": "Nến decor",
+      "imageUrl": "/uploads/products/265b6f3336e04a0594b09ffade724ae1.jpg",
+      "images": [
+        {
+          "id": 7,
+          "url": "/uploads/products/265b6f3336e04a0594b09ffade724ae1.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 30,
+      "name": "Hộp Quà Giấc Mơ Tiên Cá",
+      "description": "Set quà nến thơm mang cả đại dương mát lành về góc phòng của bạn. Sự kết hợp tinh tế giữa sáp gel xanh ngọc trong vắt, khay gốm sao biển, vỏ ốc cùng tiểu cảnh nàng tiên cá mang hương gió biển và muối mặn thanh khiết, giúp xoa dịu căng thẳng và thắp sáng năng lượng bình yên mùa hạ.  \nSet quà bao gồm: \n01 Nến gel khay gốm sao biển xanh ngọc đính vỏ ốc và hạt cườm lấp lánh   \n01 Nến gel khay gốm vỏ ốc xoắn màu trắng tinh tế   \n01 Nến ly thủy tinh gel xanh biển (tùy chọn mẫu tiểu cảnh nàng tiên cá hoặc rải sỏi đá tự nhiên)   \n01 Phao bơi mini sọc xanh trắng decor xinh xắn   San hô khô và các mảnh vỏ sò tự nhiên trang trí kèm   \n01 Thiệp chúc mừng đi kèm (hỗ trợ viết lời chúc theo yêu cầu)\nHộp quà giấy kraft mộc mạc, chỉn chu kèm lót bảo vệ chống vỡ",
+      "price": 350000.0,
+      "salePrice": null,
+      "effectivePrice": 350000.0,
+      "scent": "",
+      "volume": "800g",
+      "burnTimeHours": null,
+      "stock": 5,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 4,
+      "categoryName": "Set quà tặng",
+      "imageUrl": "/uploads/products/a7f2a14157f648ef9c8ffed3933d7f24.jpg",
+      "images": [
+        {
+          "id": 6,
+          "url": "/uploads/products/a7f2a14157f648ef9c8ffed3933d7f24.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 28,
+      "name": "Ốc Biển Xanh Ngọc",
+      "description": "Nến decor hình vỏ ốc độc đáo với lớp sáp màu xanh ngọc trong suốt, trang trí thêm vỏ sò nhỏ bên trong mang đậm hơi thở đại dương.\nCông dụng: Dùng để trang trí góc làm việc, phòng ngủ, làm phụ kiện chụp ảnh hoặc quà tặng xinh xắn.",
+      "price": 80000.0,
+      "salePrice": null,
+      "effectivePrice": 80000.0,
+      "scent": "",
+      "volume": "150g",
+      "burnTimeHours": null,
+      "stock": 35,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 6,
+      "categoryName": "Nến decor",
+      "imageUrl": "/uploads/products/390d5251a18548d18197a9f06e9e21de.jpg",
+      "images": [
+        {
+          "id": 5,
+          "url": "/uploads/products/390d5251a18548d18197a9f06e9e21de.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 22,
+      "name": "Ốc Đảo Biển Sâu",
+      "description": "Nến hũ thủy tinh thiết kế lấy cảm hứng từ đại dương sâu thẳm với lớp sáp màu xanh dương độc đáo, trang trí hạt cát và vỏ ốc bên trên. Mùi hương mang lại cảm giác tươi mát, thư giãn.",
+      "price": 40000.0,
+      "salePrice": null,
+      "effectivePrice": 40000.0,
+      "scent": "Coastal Sun & Coconut Water (Nắng ven biển & Nước dừa)",
+      "volume": "200g",
+      "burnTimeHours": null,
+      "stock": 8,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 2,
+      "categoryName": "Nến hũ thủy tinh",
+      "imageUrl": "/uploads/products/ce2356be6ce341709bc8618e84da447c.jpg",
+      "images": [
+        {
+          "id": 4,
+          "url": "/uploads/products/ce2356be6ce341709bc8618e84da447c.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 21,
+      "name": "Tiểu Tiên Cá Biển Xanh",
+      "description": "Set quà tặng nến thơm chủ đề đại dương dễ thương, trang trí mô hình tiểu tiên cá kết hợp vỏ sò, sao biển sinh động.",
+      "price": 150000.0,
+      "salePrice": null,
+      "effectivePrice": 150000.0,
+      "scent": "Ocean Breeze & Sea Salt (Gió biển & Muối biển)",
+      "volume": "300g",
+      "burnTimeHours": null,
+      "stock": 20,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 4,
+      "categoryName": "Set quà tặng",
+      "imageUrl": "/uploads/products/7cfe62a42a4f42be8b1cbdc7fef73e4f.jpg",
+      "images": [
+        {
+          "id": 3,
+          "url": "/uploads/products/7cfe62a42a4f42be8b1cbdc7fef73e4f.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 20,
+      "name": "SET 3 HŨ NẾN THƠM HƯƠNG BIỂN",
+      "description": "Set gồm 3 hũ nến thủy tinh trang trí phong cách đại dương, kèm tiểu cảnh xinh xắn.",
+      "price": 150000.0,
+      "salePrice": 120000.0,
+      "effectivePrice": 120000.0,
+      "scent": "Aquatic (Hương biển tươi mát, dễ chịu)",
+      "volume": "800g",
+      "burnTimeHours": null,
+      "stock": 100,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 2,
+      "categoryName": "Nến hũ thủy tinh",
+      "imageUrl": "/uploads/products/58736222f1f6428ebae7e9fddd8022e5.jpg",
+      "images": [
+        {
+          "id": 2,
+          "url": "/uploads/products/58736222f1f6428ebae7e9fddd8022e5.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 14,
+      "name": "Set quà Mùa Hè (3 nến thiếc)",
+      "description": "Hộp quà gồm 3 nến thiếc (50g) với các mùi hương: Cam bergamot, Chanh sả, Dừa.",
+      "price": 249000.0,
+      "salePrice": 219000.0,
+      "effectivePrice": 219000.0,
+      "scent": "Tuyển chọn 3 mùi",
+      "volume": "3 x 50g",
+      "burnTimeHours": 36,
+      "stock": 34,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 4,
+      "categoryName": "Set quà tặng",
+      "imageUrl": "/uploads/products/06c8dd6d1e3c438a97c220a4cf319b73.jpg",
+      "images": [
+        {
+          "id": 0,
+          "url": "/uploads/products/06c8dd6d1e3c438a97c220a4cf319b73.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 1,
+      "name": "Nến ly Biển Xanh 100g",
+      "description": "Nến ly thủy tinh màu xanh mát mắt, thiết kế nhỏ gọn, mang hương vị biển cả thư giãn.",
+      "price": 119000.0,
+      "salePrice": null,
+      "effectivePrice": 119000.0,
+      "scent": "Muối biển & rong biển",
+      "volume": "100g",
+      "burnTimeHours": 25,
+      "stock": 79,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 1,
+      "categoryName": "Nến ly",
+      "imageUrl": "/uploads/products/4f22abf89e01481bbf1615cf3291a6b6.jpg",
+      "images": [
+        {
+          "id": 1,
+          "url": "/uploads/products/4f22abf89e01481bbf1615cf3291a6b6.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 3,
+      "name": "Nến ly Dừa Nắng 100g",
+      "description": "Nến ly kèm nắp gỗ mộc mạc, mang hương thơm ngọt ngào, ấm áp chuẩn vị mùa hè.",
+      "price": 109000.0,
+      "salePrice": null,
+      "effectivePrice": 109000.0,
+      "scent": "Dừa & vani",
+      "volume": "100g",
+      "burnTimeHours": 25,
+      "stock": 89,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 1,
+      "categoryName": "Nến ly",
+      "imageUrl": "/uploads/products/38cb0121ec4a4370ad3fab249d0556e7.jpg",
+      "images": [
+        {
+          "id": 10,
+          "url": "/uploads/products/38cb0121ec4a4370ad3fab249d0556e7.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 11,
+      "name": "Nến thiếc Cam Bergamot 50g",
+      "description": "Nến hộp thiếc nhỏ gọn, tiện lợi mang theo, hương cam chanh tươi mát giúp giải tỏa căng thẳng.",
+      "price": 69000.0,
+      "salePrice": null,
+      "effectivePrice": 69000.0,
+      "scent": "Cam bergamot",
+      "volume": "50g",
+      "burnTimeHours": 12,
+      "stock": 119,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 3,
+      "categoryName": "Nến hộp thiếc",
+      "imageUrl": "/uploads/products/b5e6bf4423484361b711dea8d0a8777d.jpg",
+      "images": [
+        {
+          "id": 11,
+          "url": "/uploads/products/b5e6bf4423484361b711dea8d0a8777d.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 10,
+      "name": "Nến hũ Quế Táo 300g",
+      "description": "Nến hũ dung tích lớn, hương quế kết hợp táo đỏ ngọt ấm, cực kỳ thích hợp cho không gian ấm cúng mùa đông.",
+      "price": 319000.0,
+      "salePrice": null,
+      "effectivePrice": 319000.0,
+      "scent": "Quế & táo đỏ",
+      "volume": "300g",
+      "burnTimeHours": 65,
+      "stock": 29,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 2,
+      "categoryName": "Nến hũ thủy tinh",
+      "imageUrl": "/uploads/products/8b7d3a8362f54a9e9db614752c21a213.jpg",
+      "images": [
+        {
+          "id": 12,
+          "url": "/uploads/products/8b7d3a8362f54a9e9db614752c21a213.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 15,
+      "name": "Set quà Thư Giãn (nến ly + kéo cắt bấc)",
+      "description": "Hộp quà tặng kèm nến ly và phụ kiện kéo cắt bấc tiện lợi, thư giãn tuyệt vời.",
+      "price": 329000.0,
+      "salePrice": null,
+      "effectivePrice": 329000.0,
+      "scent": "Oải hương",
+      "volume": "200g + phụ kiện",
+      "burnTimeHours": 45,
+      "stock": 24,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 4,
+      "categoryName": "Set quà tặng",
+      "imageUrl": "/uploads/products/3bd1409b71414e48962346418d07d530.jpg",
+      "images": [
+        {
+          "id": 13,
+          "url": "/uploads/products/3bd1409b71414e48962346418d07d530.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 5,
+      "name": "Nến ly Hoa Sứ 100g",
+      "description": "Nến ly nắp gỗ thơm ngát hương hoa dịu nhẹ, trang nhã.",
+      "price": 119000.0,
+      "salePrice": null,
+      "effectivePrice": 119000.0,
+      "scent": "Hoa sứ & hoa nhài",
+      "volume": "100g",
+      "burnTimeHours": 25,
+      "stock": 69,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 1,
+      "categoryName": "Nến ly",
+      "imageUrl": "/uploads/products/cba27119a65a4fc281f47f6949e28f71.jpg",
+      "images": [
+        {
+          "id": 14,
+          "url": "/uploads/products/cba27119a65a4fc281f47f6949e28f71.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 16,
+      "name": "Set quà Cao Cấp (2 nến hũ + dụng cụ tắt nến)",
+      "description": "Set quà sang trọng gồm 2 hũ nến và dụng cụ tắt nến cao cấp.",
+      "price": 599000.0,
+      "salePrice": 549000.0,
+      "effectivePrice": 549000.0,
+      "scent": "Gỗ đàn hương & trà trắng",
+      "volume": "2 x 250g",
+      "burnTimeHours": 110,
+      "stock": 19,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 4,
+      "categoryName": "Set quà tặng",
+      "imageUrl": "/uploads/products/50f1229455f149bd9138a819976a4d56.jpg",
+      "images": [
+        {
+          "id": 15,
+          "url": "/uploads/products/50f1229455f149bd9138a819976a4d56.jpg",
+          "isPrimary": true
+        },
+        {
+          "id": 16,
+          "url": "/uploads/products/eb3ee5de3d3b42c8954e46e77e16a665.jpg",
+          "isPrimary": false
+        },
+        {
+          "id": 17,
+          "url": "/uploads/products/029f39cbf5774ebb9283dd3edc5b36b6.jpg",
+          "isPrimary": false
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 1
+    },
+    {
+      "id": 8,
+      "name": "Nến hũ Gỗ Đàn Hương 250g",
+      "description": "Nến hũ dung tích lớn mang hương gỗ ấm áp, trầm lắng và sang trọng.",
+      "price": 289000.0,
+      "salePrice": 259000.0,
+      "effectivePrice": 259000.0,
+      "scent": "Gỗ đàn hương & hổ phách",
+      "volume": "250g",
+      "burnTimeHours": 55,
+      "stock": 40,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 2,
+      "categoryName": "Nến hũ thủy tinh",
+      "imageUrl": "/uploads/products/7b796b39a8e44470b9b7faa8da421189.jpg",
+      "images": [
+        {
+          "id": 18,
+          "url": "/uploads/products/7b796b39a8e44470b9b7faa8da421189.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 13,
+      "name": "Nến thiếc Vani 80g",
+      "description": "Hộp thiếc nhỏ gọn, hương thơm ngọt ngào, ấm cúng.",
+      "price": 89000.0,
+      "salePrice": null,
+      "effectivePrice": 89000.0,
+      "scent": "Vani & caramel",
+      "volume": "80g",
+      "burnTimeHours": 20,
+      "stock": 95,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 3,
+      "categoryName": "Nến hộp thiếc",
+      "imageUrl": "/uploads/products/082e03b3e06846429e81398de0f75d87.jpg",
+      "images": [
+        {
+          "id": 19,
+          "url": "/uploads/products/082e03b3e06846429e81398de0f75d87.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": true,
+      "sold": 0
+    },
+    {
+      "id": 7,
+      "name": "Nến ly Oải Hương 200g",
+      "description": "Nến ly dung tích lớn giúp thư giãn tinh thần, dễ ngủ.",
+      "price": 209000.0,
+      "salePrice": null,
+      "effectivePrice": 209000.0,
+      "scent": "Oải hương (lavender)",
+      "volume": "200g",
+      "burnTimeHours": 45,
+      "stock": 45,
+      "isActive": true,
+      "isFeatured": true,
+      "categoryId": 1,
+      "categoryName": "Nến ly",
+      "imageUrl": "/uploads/products/d740350c00334f4eb0aeca5d7769794d.jpg",
+      "images": [
+        {
+          "id": 20,
+          "url": "/uploads/products/d740350c00334f4eb0aeca5d7769794d.jpg",
+          "isPrimary": true
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 19,
+      "name": "Đế đặt nến thủy tinh",
+      "description": "Đế thủy tinh chịu nhiệt, bảo vệ mặt bàn khi thắp nến.",
+      "price": 79000.0,
+      "salePrice": null,
+      "effectivePrice": 79000.0,
+      "scent": "",
+      "volume": "1 cái",
+      "burnTimeHours": null,
+      "stock": 45,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 5,
+      "categoryName": "Phụ kiện nến",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 4,
+      "name": "Nến ly Dừa Nắng 200g",
+      "description": "Dừa và vani dung tích 200g, phù hợp không gian thư giãn.",
+      "price": 189000.0,
+      "salePrice": 169000.0,
+      "effectivePrice": 169000.0,
+      "scent": "Dừa & vani",
+      "volume": "200g",
+      "burnTimeHours": 45,
+      "stock": 55,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 1,
+      "categoryName": "Nến ly",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 9,
+      "name": "Nến hũ Trà Trắng 250g",
+      "description": "Hương trà trắng thanh khiết, tinh tế, dễ dùng hằng ngày.",
+      "price": 279000.0,
+      "salePrice": null,
+      "effectivePrice": 279000.0,
+      "scent": "Trà trắng & xạ hương",
+      "volume": "250g",
+      "burnTimeHours": 55,
+      "stock": 50,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 2,
+      "categoryName": "Nến hũ thủy tinh",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 6,
+      "name": "Nến ly Chanh Sả 100g",
+      "description": "Hương chanh sả sảng khoái, giúp không gian thông thoáng, dễ chịu.",
+      "price": 99000.0,
+      "salePrice": 79000.0,
+      "effectivePrice": 79000.0,
+      "scent": "Chanh & sả",
+      "volume": "100g",
+      "burnTimeHours": 25,
+      "stock": 100,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 1,
+      "categoryName": "Nến ly",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 12,
+      "name": "Nến thiếc Bạc Hà 80g",
+      "description": "Hương bạc hà mát lạnh, giúp tỉnh táo khi làm việc.",
+      "price": 89000.0,
+      "salePrice": 69000.0,
+      "effectivePrice": 69000.0,
+      "scent": "Bạc hà & tràm",
+      "volume": "80g",
+      "burnTimeHours": 20,
+      "stock": 110,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 3,
+      "categoryName": "Nến hộp thiếc",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 18,
+      "name": "Dụng cụ tắt nến",
+      "description": "Dụng cụ tắt nến dạng chuông, tắt lửa nhẹ nhàng, hạn chế khói và sáp bắn.",
+      "price": 119000.0,
+      "salePrice": null,
+      "effectivePrice": 119000.0,
+      "scent": "",
+      "volume": "1 cái",
+      "burnTimeHours": null,
+      "stock": 50,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 5,
+      "categoryName": "Phụ kiện nến",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    },
+    {
+      "id": 17,
+      "name": "Kéo cắt bấc nến",
+      "description": "Kéo cắt bấc inox, giữ bấc dài khoảng 5mm để nến cháy đều, ít khói.",
+      "price": 99000.0,
+      "salePrice": null,
+      "effectivePrice": 99000.0,
+      "scent": "",
+      "volume": "1 cái",
+      "burnTimeHours": null,
+      "stock": 60,
+      "isActive": true,
+      "isFeatured": false,
+      "categoryId": 5,
+      "categoryName": "Phụ kiện nến",
+      "imageUrl": null,
+      "images": [],
+      "rating": 0,
+      "reviewCount": 0,
+      "isNew": false,
+      "sold": 0
+    }
+  ],
+  "total": 25,
+  "page": 1,
+  "pageSize": 50
 }

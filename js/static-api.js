@@ -5,7 +5,7 @@
   const day = 864e5, eff = p => (p.salePrice && p.salePrice < p.price ? p.salePrice : p.price);
   const E = m => { throw new Error(m); };
   // ----- dữ liệu nạp từ data/store.json -----
-  const FALLBACK = { categories: [], products: [], reviews: [], stats: { visits: 1968, purchases: 1236 },
+  const FALLBACK = { categories: [], products: [], reviews: [], stats: { visits: 2499, purchases: 1775 },
     vouchers: [{ id: 1, code: 'WELCOME10', discountPercent: 10, discountAmount: null, minOrder: 150000, maxUses: null, usedCount: 0, expiresAt: null, isActive: true }] };
   let cats = [], products = [], vouchers = [], reviews = [], visits = 0, purchBase = 0, baseStamp = '';
   // /uploads/products/abc.png (đường dẫn của Backend) -> images/products/abc.jpg (file đã tối ưu, đi kèm repo)
@@ -56,6 +56,7 @@
     const flag = k => q[k] === 'true';
 
     if (M === 'POST /api/stats/visit') { visits++; return { visits, purchases: purchBase + orders.filter(o => o.status !== 'Cancelled').length }; }
+    if (M === 'PUT /api/stats') { if (!need().roles.includes('Admin')) E('Bạn không có quyền thực hiện thao tác này.'); const v = Math.round(+body.visits), pu = Math.round(+body.purchases); if (!(v >= 0) || !(pu >= 0)) E('Số liệu không được âm.'); const real = orders.filter(o => o.status !== 'Cancelled').length; visits = v; purchBase = Math.max(0, pu - real); return { visits, purchases: purchBase + real }; }
     if (M === 'GET /api/stats') return { visits, purchases: purchBase + orders.filter(o => o.status !== 'Cancelled').length };
     if (M === 'GET /api/categories') return cats.filter(c => (flag('all') && isStaff) || c.isActive).map(c => ({ ...c, productCount: products.filter(x => x.categoryId === c.id && x.isActive).length }));
     if (M === 'GET /api/products') {
@@ -169,13 +170,13 @@
   // ----- lưu trạng thái vào trình duyệt của từng khách (giỏ hàng, đơn, tài khoản, đánh giá...) -----
   const KEY = 'aura_static_state_v1';
   function save() {
-    try { localStorage.setItem(KEY, JSON.stringify({ base: baseStamp, cats, products, vouchers, reviews, users, carts, orders, seq, visits })); } catch { }
+    try { localStorage.setItem(KEY, JSON.stringify({ base: baseStamp, cats, products, vouchers, reviews, users, carts, orders, seq, visits, purchBase })); } catch { }
   }
   function restore() {
     try {
       const d = JSON.parse(localStorage.getItem(KEY) || 'null');
       if (!d || d.base !== baseStamp) return;          // dữ liệu cửa hàng đã được cập nhật -> bỏ trạng thái cũ
-      cats = d.cats; products = d.products; vouchers = d.vouchers; reviews = d.reviews; orders = d.orders; seq = d.seq; visits = d.visits;
+      cats = d.cats; products = d.products; vouchers = d.vouchers; reviews = d.reviews; orders = d.orders; seq = d.seq; visits = d.visits; if (d.purchBase != null) purchBase = d.purchBase;
       users.splice(0, users.length, ...d.users); Object.keys(carts).forEach(k => delete carts[k]); Object.assign(carts, d.carts);
     } catch { }
   }

@@ -77,13 +77,14 @@ function renderNav() {
     </div></div></nav>`;
 }
 function renderFooter() {
-  const phone = B.phone || '0768724134';
-  const email = B.email || 'PHAMNGUYENHOANGLOI4869@GMAIL.COM';
+  const phone = B.phone || '0123456798';
+  const email = B.email || 'theaura.cauracd@gmail.com';
+  const tiktok = B.tiktok || '@the.aura.candle0';
   const shipping = B.shippingPolicy || 'Xử lý đơn trong 1–2 ngày làm việc; giao hàng dự kiến 2–5 ngày làm việc tùy khu vực. Phí vận chuyển được thông báo khi xác nhận đơn. Hiện hỗ trợ thanh toán COD.';
   const returns = B.returnPolicy || 'Liên hệ trong vòng 3 ngày nếu hàng bị hư hỏng, giao sai hoặc có lỗi. Vui lòng giữ bao bì và gửi mã đơn kèm ảnh/video. Sản phẩm đã sử dụng hoặc đốt thử không áp dụng đổi trả, trừ trường hợp pháp luật quy định.';
   $('#footer').innerHTML = `<div class="footer-aura"><div class="container"><div class="row g-4 align-items-start">
-    <div class="col-12 col-md-4"><img src="images/logo/logo-square.jpg" alt="Logo The Aura Candle" height="76" class="rounded-3 mb-2"><div class="fw-bold fs-5">${esc(B.name || 'The Aura Candle')}</div><div>${esc(B.tagline || 'Hương thơm bừng lên phong cách sống')}</div><p class="small mt-2 mb-0">Nến thơm và quà tặng giúp không gian thêm ấm áp. Cảm ơn bạn đã lựa chọn chúng tôi.</p></div>
-    <div class="col-12 col-md-4"><h5 class="text-white">Liên hệ</h5><div class="mb-2"><b>Điện thoại:</b> <a href="tel:${esc(phone)}">${esc(phone)}</a></div><div class="mb-2"><b>Email:</b> <a href="mailto:${esc(email)}">${esc(email)}</a></div><div class="mb-2"><b>Hỗ trợ:</b> ${esc(B.address || 'Hỗ trợ khách hàng trực tuyến trên toàn quốc')}</div>${B.facebook ? `<div><a href="${esc(B.facebook)}" target="_blank" rel="noopener noreferrer">Fanpage chính thức</a></div>` : ''}<div class="small mt-2">Thời gian phản hồi: Thứ 2–Thứ 7, 8:00–17:00 (trừ ngày lễ).</div></div>
+    <div class="col-12 col-md-4"><img src="images/logo/logo-square.jpg" alt="Logo The Aura Candle" width="200" height="200" class="footer-logo rounded-3 mb-2"><div class="fw-bold fs-5">${esc(B.name || 'The Aura Candle')}</div><div>${esc(B.tagline || 'Hương thơm bừng lên phong cách sống')}</div><p class="small mt-2 mb-0">Nến thơm và quà tặng giúp không gian thêm ấm áp. Cảm ơn bạn đã lựa chọn chúng tôi.</p></div>
+    <div class="col-12 col-md-4"><h5 class="text-white">Liên hệ</h5><div class="mb-2"><b>Điện thoại:</b> <a href="tel:${esc(phone)}">${esc(phone)}</a></div><div class="mb-2"><b>Facebook:</b> ${B.facebook ? `<a href="${esc(B.facebook)}" target="_blank" rel="noopener noreferrer">${esc(B.facebookName || 'The Aura Candle')}</a>` : esc(B.facebookName || 'The Aura Candle')}</div><div class="mb-2"><b>Email:</b> <a href="mailto:${esc(email)}">${esc(email)}</a></div><div class="mb-2"><b>Tiktok:</b> <a href="https://www.tiktok.com/${esc(tiktok)}" target="_blank" rel="noopener noreferrer">${esc(tiktok)}</a></div><div class="mb-2"><b>Hỗ trợ:</b> ${esc(B.address || 'Hỗ trợ khách hàng trực tuyến trên toàn quốc')}</div><div class="small mt-2">Thời gian phản hồi: ${esc(B.replyHours || 'Thứ 2–Thứ 7, 08:00–20:00 (trừ ngày lễ).')}</div></div>
     <div class="col-12 col-md-4"><h5 class="text-white">Chính sách mua hàng</h5><details class="footer-policy mb-2"><summary>Giao hàng & thanh toán</summary><p class="mt-2 mb-0">${esc(shipping)}</p></details><details class="footer-policy mb-2"><summary>Đổi trả & hoàn tiền</summary><p class="mt-2 mb-0">${esc(returns)}</p></details><div class="small mt-2">Đặt hàng đồng nghĩa với việc khách hàng đã đọc và đồng ý các chính sách áp dụng tại thời điểm mua hàng.</div></div>
   </div><hr class="border-light opacity-25"><div class="d-flex flex-column flex-sm-row justify-content-between gap-2 text-center small opacity-75"><span>© ${new Date().getFullYear()} ${esc(B.name || 'The Aura Candle')}. Bảo lưu mọi quyền.</span>${S.stats ? `<span>Lượt truy cập: <b>${num(S.stats.visits)}</b> · Lượt mua hàng: <b>${num(S.stats.purchases)}</b></span>` : ''}<span>Website bán nến thơm · Thanh toán COD</span></div></div></div>`;
 }
@@ -116,10 +117,6 @@ async function home() {
   const cats = S.cats;
   return `<img class="hero-img w-100" src="images/banner/banner-wide.jpg" alt="The Aura Candle – ${esc(B.tagline)}">
     <div class="text-center mt-3"><a href="#/products" class="btn btn-brand btn-lg">Khám phá nến thơm</a></div>
-    ${statsBand()}
-    ${cats.length ? `<div class="section-title"><h2>Danh mục</h2></div><div>${cats.map(c => `<a class="chip" href="#/products?categoryId=${c.id}">${esc(c.name)}</a>`).join('')}</div>` : ''}
-    ${section('Sản phẩm nổi bật', feat, '#/products?featured=true')}${section('Sản phẩm mới', news, '#/products?isNew=true')}
-    ${section('Đang khuyến mãi', sale, '#/products?onSale=true')}${section('Bán chạy', best.filter(p => p.sold > 0), '#/products?sort=best')}
     <div class="section-title"><h2>Về ${esc(B.name || 'The Aura Candle')}</h2></div>
     <div class="row g-4 align-items-center"><div class="col-md-6"><img class="hero-img w-100" src="images/brand/mascot-beach-1.jpg" alt="Linh vật sao biển của The Aura Candle"></div>
       <div class="col-md-6"><p class="fs-5 fw-bold text-danger mb-2">${esc(B.tagline)}</p><p>${esc(B.about || 'Mỗi cây nến là một khoảnh khắc thư giãn: ánh lửa nhỏ, hương thơm dịu và không gian của riêng bạn. Chúng tôi chọn những mùi hương tươi mát, gợi nhớ biển, nắng và những ngày nghỉ.')}</p><a href="#/products" class="btn btn-outline-brand">Xem sản phẩm</a></div></div>
@@ -129,7 +126,11 @@ async function home() {
       ['Lần đốt đầu', 'Để nến cháy 2–3 giờ cho bề mặt sáp tan đều, tránh nến bị lõm giữa.'],
       ['Thắp an toàn', 'Đặt nến trên mặt phẳng chịu nhiệt, xa vật dễ cháy, trẻ em và thú cưng. Không đốt quá 4 giờ liên tục.'],
       ['Bảo quản', 'Đậy nắp khi không dùng, để nơi khô mát, tránh ánh nắng trực tiếp.']
-    ].map((s, i) => `<div class="col-md-6 d-flex gap-3"><span class="step-num">${i + 1}</span><div><b>${s[0]}</b><div>${s[1]}</div></div></div>`).join('')}</div></div>`;
+    ].map((s, i) => `<div class="col-md-6 d-flex gap-3"><span class="step-num">${i + 1}</span><div><b>${s[0]}</b><div>${s[1]}</div></div></div>`).join('')}</div></div>
+    ${statsBand()}
+    ${cats.length ? `<div class="section-title"><h2>Danh mục</h2></div><div>${cats.map(c => `<a class="chip" href="#/products?categoryId=${c.id}">${esc(c.name)}</a>`).join('')}</div>` : ''}
+    ${section('Sản phẩm nổi bật', feat, '#/products?featured=true')}${section('Sản phẩm mới', news, '#/products?isNew=true')}
+    ${section('Đang khuyến mãi', sale, '#/products?onSale=true')}${section('Bán chạy', best.filter(p => p.sold > 0), '#/products?sort=best')}`;
 }
 
 async function products(params) {
@@ -296,7 +297,8 @@ const ADMIN = {
     return `<div class="row g-3 mb-4">${[['Tổng doanh thu (đơn đã giao)', vnd(d.totalRevenue)], ['Tổng số đơn (không tính đã hủy)', d.totalOrders], ['Đơn chờ xử lý', d.pendingOrders], ['Sản phẩm đang kinh doanh', d.activeProducts], ['Sản phẩm sắp hết hàng', d.lowStockProducts]].map(s => `<div class="col-6 col-lg"><div class="stat"><small class="text-muted">${s[0]}</small><b>${s[1]}</b></div></div>`).join('')}</div>
     <div class="panel mb-3"><div class="d-flex justify-content-between flex-wrap gap-2 mb-2"><h2 class="h5 mb-0">Doanh thu</h2><div class="btn-group btn-group-sm">${[['day', 'Theo ngày'], ['month', 'Theo tháng'], ['year', 'Theo năm']].map(p => `<button class="btn btn-${AD.period === p[0] ? 'brand' : 'outline-brand'}" data-act="period" data-p="${p[0]}">${p[1]}</button>`).join('')}</div></div>
     ${any ? `<div class="bars">${d.series.map(s => `<div class="bar-col" title="${s.label}: ${vnd(s.revenue)} (${s.orders} đơn)"><div class="bar" style="height:${Math.round(s.revenue / max * 100)}%"></div><div class="bar-lbl">${s.label}</div></div>`).join('')}</div>` : empty('Chưa có doanh thu từ đơn hàng đã giao trong khoảng thời gian này.')}</div>
-    <div class="panel"><h2 class="h5">Sản phẩm sắp hết hàng (≤ 5)</h2>${d.lowStockList.length ? `<ul class="mb-0">${d.lowStockList.map(p => `<li>${esc(p.name)} – còn <b>${p.stock}</b></li>`).join('')}</ul>` : '<div class="text-muted">Không có.</div>'}</div>`;
+    <div class="panel"><h2 class="h5">Sản phẩm sắp hết hàng (≤ 5)</h2>${d.lowStockList.length ? `<ul class="mb-0">${d.lowStockList.map(p => `<li>${esc(p.name)} – còn <b>${p.stock}</b></li>`).join('')}</ul>` : '<div class="text-muted">Không có.</div>'}</div>
+    ${isAdmin() ? `<div class="panel mt-3"><h2 class="h5">Số liệu hiển thị trên website</h2><form data-form="stats" class="row g-2 align-items-end"><div class="col-sm-4"><label class="form-label fw-bold">Lượt truy cập</label><input class="form-control" name="visits" type="number" min="0" required value="${S.stats ? S.stats.visits : 0}"></div><div class="col-sm-4"><label class="form-label fw-bold">Lượt mua hàng</label><input class="form-control" name="purchases" type="number" min="0" required value="${S.stats ? S.stats.purchases : 0}"></div><div class="col-sm-4"><button class="btn btn-brand w-100" type="submit">Lưu số liệu</button></div></form><div class="form-text">Lượt mua hiển thị đã bao gồm các đơn thật; hệ thống tự cộng thêm khi có đơn mới.</div></div>` : ''}`;
   },
   async products() {
     const st = AD.products;
@@ -439,6 +441,7 @@ const F = {
   },
   async profile(f) { const me = await api('PUT', '/api/account/me', { fullName: f.elements.fullName.value.trim(), phone: f.elements.phone.value.trim() || null, address: f.elements.address.value.trim() || null }); setAuth({ token: S.token, user: me }); toast('Đã lưu thông tin.'); },
   async password(f) { await api('POST', '/api/account/change-password', { currentPassword: f.elements.currentPassword.value, newPassword: f.elements.newPassword.value }); f.reset(); toast('Đã đổi mật khẩu.'); },
+  async stats(f) { S.stats = await api('PUT', '/api/stats', { visits: +f.elements.visits.value, purchases: +f.elements.purchases.value }); renderFooter(); toast('Đã cập nhật số liệu hiển thị.'); },
   async review(f) { await api('POST', '/api/reviews', { productId: +f.elements.productId.value, rating: +f.elements.rating.value, comment: f.elements.comment.value.trim() || null }); toast('Cảm ơn bạn đã đánh giá!'); route(); },
   async checkout(f) {
     const o = await api('POST', '/api/orders', { receiverName: f.elements.receiverName.value.trim(), phone: f.elements.phone.value.trim(), address: f.elements.address.value.trim(), note: f.elements.note.value.trim() || null, voucherCode: f.elements.voucherCode.value.trim() || null, paymentMethod: 'Cod', idempotencyKey: checkoutKey });
