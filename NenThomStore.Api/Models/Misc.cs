@@ -54,8 +54,8 @@ public class AuditLog
 public class SiteStat
 {
     // Số liệu mẫu ban đầu để chạy demo (có thể đổi trong database bằng scripts/cap-nhat-so-lieu-ao.sql)
-    public const int SeedVisits = 1968;      // lượt truy cập, khoảng 2000
-    public const int SeedPurchases = 1236;   // lượt mua nền, luôn thấp hơn 2000
+    public const int SeedVisits = 2499;      // lượt truy cập
+    public const int SeedPurchases = 1775;   // lượt mua nền (hiển thị = số này + đơn thật)
 
     public int Id { get; set; }
     public int VisitCount { get; set; }

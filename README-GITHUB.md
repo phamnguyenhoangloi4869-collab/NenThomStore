@@ -31,3 +31,10 @@ Vì vậy bản trên GitHub dùng một "ảnh chụp" dữ liệu của localh
   chủ cửa hàng **không nhận được đơn**. Muốn nhận đơn thật cần chạy Backend trên một máy chủ.
 - Tài khoản thử (chỉ có tác dụng trong trình duyệt): `admin@demo.vn`, `manager@demo.vn`, `customer@demo.vn` – mật khẩu `Demo1234`.
 - Bản localhost (`NenThomStore.Web`) không bị thay đổi gì.
+
+## Cách nhanh nhất để GitHub giống hệt localhost
+1. Chạy `NenThomStore.Api` (cửa sổ phải đang mở).
+2. Bấm đúp file **`DONG-BO-GITHUB.bat`** ở thư mục gốc: nó xuất dữ liệu + ảnh từ localhost rồi `git push`.
+3. Đợi ~1 phút, mở trang GitHub và nhấn Ctrl + F5.
+
+Trên GitHub, phần admin vẫn chạy được (thêm/sửa/ẩn sản phẩm, tải ảnh, sửa số liệu) nhưng chỉ lưu trong trình duyệt của người đang dùng.

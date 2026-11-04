@@ -20,8 +20,8 @@
     mk(13, "Đĩa sứ sao biển", 4, 79000, null, "", "1 chiếc", null, 30, 0, false, 50, "Đĩa sứ hình sao biển xanh ngọc, dùng đặt nến, trang sức nhỏ hoặc trang trí.", [{"id": 20, "url": "images/products/p13-1.jpg"}, {"id": 21, "url": "images/products/p13-2.jpg"}])];
   const users = [{ id: 'u1', email: 'admin@demo.vn', fullName: 'Quản trị viên Demo', roles: ['Admin'] }, { id: 'u2', email: 'manager@demo.vn', fullName: 'Quản lý Demo', roles: ['Manager'] }, { id: 'u3', email: 'customer@demo.vn', fullName: 'Khách hàng Demo', roles: ['Customer'] }].map(u => ({ ...u, pw: 'demo', locked: false, phone: null, address: null, createdAt: new Date().toISOString() }));
   // Lượt truy cập demo được nhớ trong trình duyệt (localStorage) để F5 / mở lại vẫn giữ và tăng dần
-  let visits = 1968;
-  try { visits = Number(localStorage.getItem('aura_demo_visits')) || 1968; } catch { }
+  let visits = 2499;
+  try { visits = Number(localStorage.getItem('aura_demo_visits')) || 2499; } catch { }
   const carts = {}; let orders = [], reviews = [], seq = { o: 1, p: 100, c: 10, v: 10, r: 1, u: 10 };
   let vouchers = [{ id: 1, code: 'WELCOME10', discountPercent: 10, discountAmount: null, minOrder: 150000, maxUses: null, usedCount: 0, expiresAt: null, isActive: true }];
   const FLOW = { Pending: ['Confirmed', 'Cancelled'], Confirmed: ['Shipping', 'Cancelled'], Shipping: ['Delivered'], Delivered: [], Cancelled: [] };
@@ -47,8 +47,8 @@
     const num = k => (q[k] === undefined || q[k] === '' ? null : Number(q[k]));
     const flag = k => q[k] === 'true';
 
-    if (M === 'POST /api/stats/visit') { visits++; try { localStorage.setItem('aura_demo_visits', visits); } catch { } return { visits, purchases: 1236 + orders.filter(o => o.status !== 'Cancelled').length }; }
-    if (M === 'GET /api/stats') return { visits, purchases: 1236 + orders.filter(o => o.status !== 'Cancelled').length };
+    if (M === 'POST /api/stats/visit') { visits++; try { localStorage.setItem('aura_demo_visits', visits); } catch { } return { visits, purchases: 1775 + orders.filter(o => o.status !== 'Cancelled').length }; }
+    if (M === 'GET /api/stats') return { visits, purchases: 1775 + orders.filter(o => o.status !== 'Cancelled').length };
     if (M === 'GET /api/categories') return cats.filter(c => (flag('all') && isStaff) || c.isActive).map(c => ({ ...c, productCount: products.filter(x => x.categoryId === c.id && x.isActive).length }));
     if (M === 'GET /api/products') {
       let l = products.filter(x => (flag('includeInactive') && isStaff) || (x.isActive && cats.find(c => c.id === x.categoryId).isActive));

@@ -5,7 +5,7 @@
   const day = 864e5, eff = p => (p.salePrice && p.salePrice < p.price ? p.salePrice : p.price);
   const E = m => { throw new Error(m); };
   // ----- dữ liệu nạp từ data/store.json -----
-  const FALLBACK = { categories: [], products: [], reviews: [], stats: { visits: 1968, purchases: 1236 },
+  const FALLBACK = { categories: [], products: [], reviews: [], stats: { visits: 2499, purchases: 1775 },
     vouchers: [{ id: 1, code: 'WELCOME10', discountPercent: 10, discountAmount: null, minOrder: 150000, maxUses: null, usedCount: 0, expiresAt: null, isActive: true }] };
   let cats = [], products = [], vouchers = [], reviews = [], visits = 0, purchBase = 0, baseStamp = '';
   // /uploads/products/abc.png (đường dẫn của Backend) -> images/products/abc.jpg (file đã tối ưu, đi kèm repo)
@@ -41,6 +41,8 @@
   const restock = o => o.details.forEach(d => { products.find(p => p.id === d.productId).stock += d.quantity; });
   const auth = u => ({ token: 'demo:' + u.id, user: prof(u) });
 
+  // Thu nhỏ ảnh admin tải lên (tối đa 800px, JPEG) rồi lưu trong trình duyệt - bản tĩnh không có máy chủ để lưu file
+  const shrink = file => new Promise((ok, no) => { const u = URL.createObjectURL(file), im = new Image(); im.onload = () => { const s = Math.min(1, 800 / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(im, 0, 0, c.width, c.height); URL.revokeObjectURL(u); ok(c.toDataURL('image/jpeg', 0.78)); }; im.onerror = () => no(new Error('Không đọc được ảnh.')); im.src = u; });
   async function handle(method, path, body, S) {
     await ready;
     await new Promise(r => setTimeout(r, 40));
@@ -56,6 +58,7 @@
     const flag = k => q[k] === 'true';
 
     if (M === 'POST /api/stats/visit') { visits++; return { visits, purchases: purchBase + orders.filter(o => o.status !== 'Cancelled').length }; }
+    if (M === 'PUT /api/stats') { if (!need().roles.includes('Admin')) E('Bạn không có quyền thực hiện thao tác này.'); const v = Math.round(+body.visits), pu = Math.round(+body.purchases); if (!(v >= 0) || !(pu >= 0)) E('Số liệu không được âm.'); const real = orders.filter(o => o.status !== 'Cancelled').length; visits = v; purchBase = Math.max(0, pu - real); return { visits, purchases: purchBase + real }; }
     if (M === 'GET /api/stats') return { visits, purchases: purchBase + orders.filter(o => o.status !== 'Cancelled').length };
     if (M === 'GET /api/categories') return cats.filter(c => (flag('all') && isStaff) || c.isActive).map(c => ({ ...c, productCount: products.filter(x => x.categoryId === c.id && x.isActive).length }));
     if (M === 'GET /api/products') {
@@ -76,7 +79,14 @@
       if (isNew) products.unshift(t); return pdto(t);
     }
     if ((m = p.match(/^\/api\/products\/(\d+)$/)) && method === 'DELETE') { staff(); (products.find(i => i.id === +m[1]) || E('Không tìm thấy.')).isActive = false; return null; }
-    if (/^\/api\/products\/\d+\/images$/.test(p)) E('Tải ảnh lên chỉ hoạt động ở bản chạy thật (Backend ASP.NET Core).');
+    if ((m = p.match(/^\/api\/products\/(\d+)\/images$/)) && method === 'POST') {
+      staff(); const t = products.find(i => i.id === +m[1]) || E('Không tìm thấy sản phẩm.'); if (t.images.length >= 8) E('Mỗi sản phẩm tối đa 8 ảnh.');
+      const file = body && body.get && body.get('file'); if (!file) E('Vui lòng chọn ảnh.'); if (file.size > 5e6) E('Ảnh tối đa 5MB.');
+      const im = { id: seq.i = Math.max(1000, seq.i || 0) + 1, url: await shrink(file), isPrimary: !t.images.length }; t.images.push(im); if (!t.imageUrl) t.imageUrl = im.url; return im;
+    }
+    if ((m = p.match(/^\/api\/products\/images\/(\d+)$/)) && method === 'DELETE') {
+      staff(); for (const t of products) { const k = t.images.findIndex(i => i.id === +m[1]); if (k >= 0) { const was = t.images[k].url; t.images.splice(k, 1); if (t.imageUrl === was) t.imageUrl = t.images[0] ? t.images[0].url : null; return null; } } E('Không tìm thấy ảnh.');
+    }
 
     if (M === 'POST /api/account/login') { const u = users.find(x => x.email === String(body.email).trim().toLowerCase()); if (u && u.locked) E('Tài khoản đang bị khóa. Vui lòng liên hệ cửa hàng.'); if (!u || u.pw !== body.password) E('Email hoặc mật khẩu không đúng.'); return auth(u); }
     if (M === 'POST /api/account/register') {
@@ -169,13 +179,13 @@
   // ----- lưu trạng thái vào trình duyệt của từng khách (giỏ hàng, đơn, tài khoản, đánh giá...) -----
   const KEY = 'aura_static_state_v1';
   function save() {
-    try { localStorage.setItem(KEY, JSON.stringify({ base: baseStamp, cats, products, vouchers, reviews, users, carts, orders, seq, visits })); } catch { }
+    try { localStorage.setItem(KEY, JSON.stringify({ base: baseStamp, cats, products, vouchers, reviews, users, carts, orders, seq, visits, purchBase })); } catch { }
   }
   function restore() {
     try {
       const d = JSON.parse(localStorage.getItem(KEY) || 'null');
       if (!d || d.base !== baseStamp) return;          // dữ liệu cửa hàng đã được cập nhật -> bỏ trạng thái cũ
-      cats = d.cats; products = d.products; vouchers = d.vouchers; reviews = d.reviews; orders = d.orders; seq = d.seq; visits = d.visits;
+      cats = d.cats; products = d.products; vouchers = d.vouchers; reviews = d.reviews; orders = d.orders; seq = d.seq; visits = d.visits; if (d.purchBase != null) purchBase = d.purchBase;
       users.splice(0, users.length, ...d.users); Object.keys(carts).forEach(k => delete carts[k]); Object.assign(carts, d.carts);
     } catch { }
   }
